@@ -38,7 +38,7 @@ The program we ran serves as a server that will receive the REST API requests we
 
 The client can submit the following REST API requests:
 API | Description
-  ------------ | -------------
+  ------ | ------
 > POST /api/student | Add a new student
 DELETE /api/student/{id} | Delete this {id} student  
 PUT /api/student/{id} | Update this {id} existing item
