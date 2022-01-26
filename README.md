@@ -62,5 +62,5 @@ GET| /api/todoitems/{id}/{field} | Get this {id} student detail by field
 To send a request:
 1. Go to client.
 2. In the 'Method' field - select a method (one of the 4 in the table above).
-3. In the 'Request URL' field - enter the system URL, in our case - <!--https://localhost:44332/{api}--> <br>
+3. In the 'Request URL' field - enter the system URL, in our case - `https://localhost:44332/{api}` <br>
 When we enter in {api} the appropriate API for the selected method (according to the table above).
