@@ -14,13 +14,15 @@ The system supports the following actions for each student:
 In addition the system supports caching when if the same request is sent within 10 seconds the answer will come back from the cache and<br>not from the database.
 Furthermore the system only supports adding students under the age of 18.
 
+
 ### Project technologies:
 * ASP.Net Core - for building the system.
 * Local database - for storing students' data.
 * Redis cache in Azure - for caching the requests.
 
 ## Setup Instructions:
-### 1. Install the system - You need to clone this repo.
+### 1. Install the system - 
+You need to clone this repo:
 * Click the green CODE button and install the project on your computer.
 * Click on the StudentManagementSystem.sln file
 * Run the program.
