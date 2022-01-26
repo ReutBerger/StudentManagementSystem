@@ -1,7 +1,7 @@
 # Student Management System
 
 ## Description:
-I developed a student management system based on the REST API interface.
+I developed a student management system based on the REST API interface.<br>
 For each student I kept the following identifying details: first name, last name, age, grades average, school name, school address.
 I also used the Id property for each student as the unique key in a relational database.
 
