@@ -45,3 +45,14 @@ PUT /api/student/{id} | Update this {id} existing item
 GET /api/todoitems/{id}/{field} | Get this {id} student detail by field
 
 > **Note:** POST and PUT requests have a request body that contains information about the student in JSON format.
+
+###  Student's JSON format example
+{
+  "student_id": "3334",
+  "first_name":"Reut",
+  "last_name":"Berger",
+  "age": 16,
+  "grades_average": 111.6,
+  "school_name":"HaRo'eh high school",
+  "school_address":"Golomb 6, Ramat Gan"
+}
