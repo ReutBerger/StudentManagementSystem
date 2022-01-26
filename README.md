@@ -63,3 +63,8 @@ To send a request:
 2. In the `Method` field - select a method (one of the 4 in the table above).
 3. In the `Request URL` field - enter the system URL, in our case - `https://localhost:44332/{api}` <br>
 When we enter in `{api}` the appropriate API for the selected method (according to the table above).
+4. Click in `send` button.
+
+#### Full POST request example:
+![image](https://user-images.githubusercontent.com/58999011/151157383-9842ad6d-b6dd-45fb-9fb9-f76aab25a440.png)
+
