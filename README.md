@@ -25,12 +25,13 @@ You need to clone this repo:
 * Click on the green 'Code' button and install the project on your computer.
 * Click on the StudentManagementSystem.sln file.
 * Run the program.
- Excellent now you have installed the system and you are ready.
 
 ### 2. Create requests client
 To send requests to the system we will use Chrome 'Advanced REST client' extension.
 * Click on the [link](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo/related?hl=iw).
 * Click on the blue 'Open app' button.
-Our client is ready.
+
+Excellent now that you have installed the system and you have client requests, you are ready to go.
+
 ## Video guide
 My recording explains the steps to run the solution-
