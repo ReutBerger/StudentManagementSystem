@@ -34,4 +34,8 @@ To send requests to the system we will use Chrome 'Advanced REST client' extensi
 Excellent now that you have installed the system and you have client requests, you are ready to go.
 
 ## How to use the system?
+The program we ran serves as a server that will receive the REST API requests we receive from the client we created.
 
+The client can submit the following REST API requests:
+API | Description
+  ------------ | -------------
