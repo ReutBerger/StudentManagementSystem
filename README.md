@@ -2,7 +2,7 @@
 
 ## Description:
 I developed a student management system based on the REST API interface.<br>
-For each student I kept the following identifying details: first name, last name, age, grades average, school name, school address.
+For each student I kept the following identifying details: first name, last name, age, grades average, school name, school address.<br>
 I also used the Id property for each student as the unique key in a relational database.
 
 The system supports the following actions for each student:
