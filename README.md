@@ -44,7 +44,7 @@ DELETE| `/api/student/{id}` | Delete this {id} student
 PUT| `/api/student/{id}` | Update this {id} existing item
 GET| `/api/todoitems/{id}/{field}` | Get this {id} student detail by field
 
-> _**Note:**_ POST and PUT requests have a request body that contains information about the student in JSON format.
+> **Note:** POST and PUT requests have a request body that contains information about the student in JSON format.
 > ####  Student's JSON format example:
 > {<br>
 >  "student_id": "3334",<br>
@@ -66,8 +66,8 @@ When we enter in `{api}` the appropriate API for the selected method (according 
 
 #### Full POST request example:
 This request will add a new student to our system. <br>
-Method : POST <br>
-Request URL : https://localhost:44332/api/student/ <br>
+Method : `POST` <br>
+Request URL : `https://localhost:44332/api/student/` <br>
 With the JSON example above in the body of the request.
 ![image](https://user-images.githubusercontent.com/58999011/151157383-9842ad6d-b6dd-45fb-9fb9-f76aab25a440.png)
 
