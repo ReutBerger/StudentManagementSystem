@@ -37,12 +37,12 @@ Excellent now that you have installed the system and you have client requests, y
 The program we ran serves as a server that will receive the REST API requests we receive from the client we created.
 
 The client can submit the following REST API requests:
-API | Description
---------- | ---------
-'''POST /api/student''' | Add a new student
-DELETE /api/student/{id} | Delete this {id} student  
-PUT /api/student/{id} | Update this {id} existing item
-GET /api/todoitems/{id}/{field} | Get this {id} student detail by field
+Method |API | Description
+--------- | --------- | ---------
+POST| /api/student | Add a new student
+DELETE| /api/student/{id} | Delete this {id} student  
+PUT| /api/student/{id} | Update this {id} existing item
+GET| /api/todoitems/{id}/{field} | Get this {id} student detail by field
 
 > **Note:** POST and PUT requests have a request body that contains information about the student in JSON format.
 
@@ -57,3 +57,4 @@ GET /api/todoitems/{id}/{field} | Get this {id} student detail by field
   "school_address":"Golomb 6, Ramat Gan"<br>
 }<br>
 <br>
+
