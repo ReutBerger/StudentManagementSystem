@@ -58,3 +58,10 @@ GET| /api/todoitems/{id}/{field} | Get this {id} student detail by field
 }<br>
 <br>
 
+### Create a request from the customer
+To send a request:
+1. Conference for the client.
+2. In the 'Method' field - select a method (one of the 4 in the table above).
+3. In the 'Request URL' field - enter the system URL, in our case -
+https://localhost:44332/{api}
+When we enter in {api} the appropriate API for the selected method (according to the table above).
