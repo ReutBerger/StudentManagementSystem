@@ -20,12 +20,11 @@ Furthermore the system only supports adding students under the age of 18.
 * Redis cache in Azure - for caching the requests.
 
 ## Setup Instructions:
-1. Open your Chrome at [google.com](https://www.google.com/).
-2. Open your DevTools Console by pressing 'F12' on keyboard(in google.com page).
-3. Open the [player.js](https://github.com/ReutBerger/GLS/blob/master/GLS/wwwroot/player.js) script file.
-4. Copy this file.
-5. Paste it on Console and press 'Enter' on keyboard.
-6. **The GLS will work.**
+### 1. Install the system - You need to clone this repo.
+* Click the green CODE button and install the project on your computer.
+* Click on the StudentManagementSystem.sln file
+* Run the program.
+ Excellent now you have installed the system and you are ready.
 
 ## Video guide
 My recording explains the steps to run the solution-
