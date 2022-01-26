@@ -47,7 +47,7 @@ GET| /api/todoitems/{id}/{field} | Get this {id} student detail by field
 > **Note:** POST and PUT requests have a request body that contains information about the student in JSON format.
 
 ####  Student's JSON format example:
-{<br>
+```{<br>
   "student_id": "3334",<br>
   "first_name":"Reut",<br>
   "last_name":"Berger",<br>
@@ -55,7 +55,7 @@ GET| /api/todoitems/{id}/{field} | Get this {id} student detail by field
   "grades_average": 111.6,<br>
   "school_name":"HaRo'eh high school",<br>
   "school_address":"Golomb 6, Ramat Gan"<br>
-}<br>
+}<br>```
 <br>
 
 ### Create a request from the customer
