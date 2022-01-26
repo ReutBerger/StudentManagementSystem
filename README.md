@@ -65,5 +65,8 @@ When we enter in `{api}` the appropriate API for the selected method (according 
 4. Click in `send` button.
 
 #### Full POST request example:
+This request will add a new student to our system.
+Method : POST
+Request URL : https://localhost:44332/api/student/
 ![image](https://user-images.githubusercontent.com/58999011/151157383-9842ad6d-b6dd-45fb-9fb9-f76aab25a440.png)
 
