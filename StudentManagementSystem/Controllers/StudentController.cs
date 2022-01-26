@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using StudentManagementSystem;
 using StackExchange.Redis;
 using StudentManagementSystem.Models;
 using Microsoft.EntityFrameworkCore;
@@ -15,8 +11,7 @@ namespace StudentManagementSystem.Controllers
     [ApiController]
     public class StudentController : ControllerBase
     {
-        private readonly StudentContext _context;
-        //private StudentManager _studentManager;
+        private readonly StudentContext _context; 
 
         private IDatabase _redisCache;
 
@@ -28,7 +23,6 @@ namespace StudentManagementSystem.Controllers
 
         public StudentController(StudentContext context)
         {
-            //_studentManager = student_manager;
             _context = context;
             _redisCache = GetConnection().GetDatabase();
         }
@@ -44,7 +38,6 @@ namespace StudentManagementSystem.Controllers
             string responseValue = _redisCache.StringGet(keyRequest);
             if (responseValue == null)
             {
-                Console.WriteLine("ADD " + responseValue); // DELETE
                 // This is a new POST request - Not in the cache!
 
                 // Check if the is age is valid.
@@ -59,11 +52,9 @@ namespace StudentManagementSystem.Controllers
                 {
                     _context.Students.Add(new_student);
                     await _context.SaveChangesAsync();
-                    //_studentManager.AddStudent(new_student);
                 }
                 catch(Exception e)
                 {
-                    //responseValue = "Failed add Student"; // DELETE
                     responseValue = e.Message;
                     _redisCache.StringSet(keyRequest, responseValue, expiry: new TimeSpan(0, 0, 10));
                     return BadRequest(responseValue);
@@ -90,7 +81,6 @@ namespace StudentManagementSystem.Controllers
             string responseValue = _redisCache.StringGet(keyRequest);
             if (responseValue == null)
             {
-                Console.WriteLine("DELETE " + responseValue); // DELETE
                 // This is a new DELETE request - Not in the cache!
                 
                 var std = await _context.Students.FindAsync(id);
@@ -98,11 +88,10 @@ namespace StudentManagementSystem.Controllers
                 {
                     _context.Students.Remove(std);
                     await _context.SaveChangesAsync();
-                    //_studentManager.DeleteStudent(id);
                 }
                 catch
                 {
-                    // THIS STUDENT ID NOT EXIST!
+                    // This student id NOT exist!
                     responseValue = "This student id not exist";
                     _redisCache.StringSet(keyRequest, responseValue, expiry: new TimeSpan(0, 0, 10));
                     return BadRequest(responseValue);
@@ -129,7 +118,6 @@ namespace StudentManagementSystem.Controllers
             string responseValue = _redisCache.StringGet(keyRequest);
             if (responseValue == null)
             {
-                Console.WriteLine("EDIT " + responseValue); // DELETE
                 // This is a new PUT request - Not in the cache!
 
                 // Check if the request is valid.
@@ -144,15 +132,12 @@ namespace StudentManagementSystem.Controllers
 
                 try
                 {
-                    
                     await _context.SaveChangesAsync();
-                    //_studentManager.EditStudent(id, student);
                 }
                 catch (Exception e)
                 {
-                    // THE STUDENT EXIST??
-                    // responseValue = "Failed edit Student";
-                    responseValue = e.Message; // DELETE
+                    // The student id NOT exist.
+                    responseValue = e.Message;
                     _redisCache.StringSet(keyRequest, responseValue, expiry: new TimeSpan(0, 0, 10));
                     return BadRequest(responseValue);
                 }
@@ -178,7 +163,6 @@ namespace StudentManagementSystem.Controllers
             string responseValue = _redisCache.StringGet(keyRequest);
             if (responseValue == null)
             {
-                Console.WriteLine("GET " + responseValue); // DELETE
                 // This is a new GET request - Not in the cache!
 
                 // Check if the is field is valid.
@@ -205,7 +189,7 @@ namespace StudentManagementSystem.Controllers
             else
             {
                 // This GET request exist in the cache!
-                Console.WriteLine(responseValue); // DELLETE
+
                 if (responseValue.Contains("Failed"))
                 {
                     return BadRequest(responseValue);
