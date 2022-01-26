@@ -13,20 +13,24 @@ The system supports the following actions for each student:
 
 In addition the system supports caching when if the same request is sent within 10 seconds the answer will come back from the cache and<br>not from the database.
 Furthermore the system only supports adding students under the age of 18.
-
-
+<br>
 ### Project technologies:
 * ASP.Net Core - for building the system.
 * Local database - for storing students' data.
 * Redis cache in Azure - for caching the requests.
 
 ## Setup Instructions:
-### 1. Install the system - 
+### 1. Install the system
 You need to clone this repo:
-* Click the green CODE button and install the project on your computer.
-* Click on the StudentManagementSystem.sln file
+* Click on the green 'Code' button and install the project on your computer.
+* Click on the StudentManagementSystem.sln file.
 * Run the program.
  Excellent now you have installed the system and you are ready.
 
+### 2. Create requests client
+To send requests to the system we will use Chrome 'Advanced REST client' extension.
+* Click on the [link](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo/related?hl=iw).
+* Click on the blue 'Open app' button.
+Our client is ready.
 ## Video guide
 My recording explains the steps to run the solution-
