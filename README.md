@@ -39,10 +39,10 @@ The program we ran serves as a server that will receive the REST API requests we
 The client can submit the following REST API requests:
 Method |API | Description
 --------- | --------- | ---------
-POST| /api/student | Add a new student
-DELETE| /api/student/{id} | Delete this {id} student  
-PUT| /api/student/{id} | Update this {id} existing item
-GET| /api/todoitems/{id}/{field} | Get this {id} student detail by field
+POST| `/api/student` | Add a new student
+DELETE| `/api/student/{id}` | Delete this {id} student  
+PUT| `/api/student/{id}` | Update this {id} existing item
+GET| `/api/todoitems/{id}/{field}` | Get this {id} student detail by field
 
 > **Note:** POST and PUT requests have a request body that contains information about the student in JSON format.
 
@@ -62,4 +62,4 @@ To send a request:
 1. Go to our client.
 2. In the `Method` field - select a method (one of the 4 in the table above).
 3. In the `Request URL` field - enter the system URL, in our case - `https://localhost:44332/{api}` <br>
-When we enter in {api} the appropriate API for the selected method (according to the table above).
+When we enter in `{api}` the appropriate API for the selected method (according to the table above).
