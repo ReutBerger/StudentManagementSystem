@@ -33,5 +33,5 @@ To send requests to the system we will use Chrome 'Advanced REST client' extensi
 
 Excellent now that you have installed the system and you have client requests, you are ready to go.
 
-## Video guide
-My recording explains the steps to run the solution-
+## How to use the system?
+
