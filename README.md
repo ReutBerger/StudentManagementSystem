@@ -72,5 +72,5 @@ With the JSON example above in the body of the request.
 ![image](https://user-images.githubusercontent.com/58999011/151157383-9842ad6d-b6dd-45fb-9fb9-f76aab25a440.png)
 Finally the system will send you a response based on the request you sent.
 
-###**You are now welcome to send as many requests as you want to the system.
-Good luck!**
+###You are now welcome to send as many requests as you want to the system.
+Good luck!
