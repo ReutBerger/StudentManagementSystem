@@ -47,7 +47,7 @@ GET| /api/todoitems/{id}/{field} | Get this {id} student detail by field
 > **Note:** POST and PUT requests have a request body that contains information about the student in JSON format.
 
 ####  Student's JSON format example:
-```{<br>
+{<br>
   "student_id": "3334",<br>
   "first_name":"Reut",<br>
   "last_name":"Berger",<br>
@@ -55,12 +55,11 @@ GET| /api/todoitems/{id}/{field} | Get this {id} student detail by field
   "grades_average": 111.6,<br>
   "school_name":"HaRo'eh high school",<br>
   "school_address":"Golomb 6, Ramat Gan"<br>
-}<br>```
-<br>
+}<br>
 
 ### Create a request from the customer
 To send a request:
-1. Go to client.
+1. Go to our client.
 2. In the `Method` field - select a method (one of the 4 in the table above).
 3. In the `Request URL` field - enter the system URL, in our case - `https://localhost:44332/{api}` <br>
 When we enter in {api} the appropriate API for the selected method (according to the table above).
