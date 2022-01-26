@@ -21,7 +21,7 @@ Furthermore the system only supports adding students under the age of 18.
 
 ## Setup Instructions:
 ### 1. Install the system
-You need to clone this repo:
+You need to clone (this)[https://github.com/ReutBerger/StudentManagementSystem] repo:
 * Click on the green `Code` button and install the project on your computer.
 * Click on the `StudentManagementSystem.sln` file.
 * Run the program.
