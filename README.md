@@ -49,11 +49,11 @@ GET| `/api/todoitems/{id}/{field}` | Get this {id} student detail by field
 > {<br>
 >  "student_id": "3334",<br>
 >  "first_name":"Reut",<br>
-> "last_name":"Berger",<br>
-> "age": 18,<br>
-> "grades_average": 111.6,<br>
-> "school_name":"HaRo'eh high school",<br>
-> "school_address":"Golomb 6, Ramat Gan"<br>
+>  "last_name":"Berger",<br>
+>  "age": 18,<br>
+>  "grades_average": 111.6,<br>
+>  "school_name":"HaRo'eh high school",<br>
+>  "school_address":"Golomb 6, Ramat Gan"<br>
 > }<br>
 
 ### Create a request from the customer
