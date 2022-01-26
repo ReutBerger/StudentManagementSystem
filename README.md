@@ -15,9 +15,9 @@ In addition the system supports caching when if the same request is sent within 
 Furthermore the system only supports adding students under the age of 18.
 
 ### Project technologies:
-1. ASP.Net Core - for building the system.
-2. Local database - for storing students' data.
-3. Redis cache in Azure - for caching the requests.
+* ASP.Net Core - for building the system.
+* Local database - for storing students' data.
+* Redis cache in Azure - for caching the requests.
 
 ## Setup Instructions:
 1. Open your Chrome at [google.com](https://www.google.com/).
